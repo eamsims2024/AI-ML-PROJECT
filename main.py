@@ -9,10 +9,12 @@ import dagshub
 
 
 # Initialize DagsHub
-dagshub.init(repo_owner='Samcool1990', repo_name='mlflow_spacy_proj', mlflow=True, root='./Artifacts')
+dagshub.init(repo_owner='eam.sims',
+             repo_name='AI-ML-PROJECT',
+             mlflow=True)
 
 # Replace with your DagsHub repository
-mlflow.set_tracking_uri("https://dagshub.com/Samcool1990/mlflow_spacy_proj.mlflow")
+mlflow.set_tracking_uri("https://dagshub.com/eam.sims/AI-ML-PROJECT.mlflow")
 
 # Download and load models
 stanza.download("en")
